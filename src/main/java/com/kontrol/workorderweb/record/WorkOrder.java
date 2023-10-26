@@ -5,11 +5,13 @@
 package com.kontrol.workorderweb.record;
 
 import java.util.Date;
+import org.springframework.data.annotation.Id;
 
 /**
  *
  * @author anita
  */
-public record WorkOrder(String id, String cliente, Date fecha, String equipo, String tecnico) {
+
+public record WorkOrder(@Id String id, String client, Date date, String asset, String technician) {
     
 }
