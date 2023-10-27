@@ -4,15 +4,14 @@
  */
 package com.kontrol.workorderweb.repository;
 
-import com.kontrol.workorderweb.record.WorkOrder;
+import com.kontrol.workorderweb.record.Client;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
-
 /**
- * Definición del repositorio
+ *
  * @author anita
  */
-@RepositoryRestResource(collectionResourceRel = "WorkOrders", path = "workorder")
-public interface WorkOrderRepository extends MongoRepository<WorkOrder,String>{
+@RepositoryRestResource(collectionResourceRel = "clients", path = "client")
+public interface ClientRepository extends MongoRepository<Client,String>{
     
 }
